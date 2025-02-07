@@ -2,6 +2,8 @@ package org.example;
 
 public class Alien {
 
+    private Laptop lap;
+
     private int codeLine;
 
     public Alien() {
@@ -16,7 +18,16 @@ public class Alien {
         this.codeLine = codeLine;
     }
 
+    public Laptop getLap() {
+        return lap;
+    }
+
+    public void setLap(Laptop lap) {
+        this.lap = lap;
+    }
+
     public void code() {
+        lap.compile();
         System.out.println("Coding...."+codeLine);
     }
 
