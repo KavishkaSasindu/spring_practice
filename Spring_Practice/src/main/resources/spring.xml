@@ -4,6 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="alien" class="org.example.Alien">
+        <constructor-arg value="30 seconds"/>
         <property name="codeLine" value="21"/>
         <property name="lap" ref="laptop"/>
     </bean>

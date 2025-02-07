@@ -5,9 +5,15 @@ public class Alien {
     private Laptop lap;
 
     private int codeLine;
+    private String codingTime;
 
     public Alien() {
         System.out.println("Alien object Created");
+    }
+
+    public Alien(String codingTime) {
+        System.out.println("Parameter Constructor is called");
+        this.codingTime = codingTime;
     }
 
     public int getCodeLine() {
@@ -26,9 +32,18 @@ public class Alien {
         this.lap = lap;
     }
 
+    public String getCodingTime() {
+        return codingTime;
+    }
+
+    public void setCodingTime(String codingTime) {
+        this.codingTime = codingTime;
+    }
+
     public void code() {
         lap.compile();
-        System.out.println("Coding...."+codeLine);
+        System.out.println("Coding...." + codeLine);
+        System.out.println("Coding Time: " + codingTime);
     }
 
 }
