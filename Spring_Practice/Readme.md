@@ -36,3 +36,10 @@ for that we can use primary field is true
     </bean>
 
 primary work when spring has confusion which bean to use
+
+
+when you use
+   
+      lazy-init="true"
+
+      for bean it create object when the bean is used by first time 
