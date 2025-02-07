@@ -3,6 +3,7 @@ package org.example;
 public class Alien {
 
     private Laptop lap;
+    private Desktop desktop;
 
     private int codeLine;
     private String codingTime;
@@ -10,6 +11,12 @@ public class Alien {
     public Alien() {
         System.out.println("Alien object Created");
     }
+
+    public Alien(Desktop desktop, String codingTime) {
+        this.desktop = desktop;
+        this.codingTime = codingTime;
+    }
+
 
     public Alien(String codingTime) {
         System.out.println("Parameter Constructor is called");

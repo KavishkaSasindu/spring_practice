@@ -7,8 +7,11 @@
         <constructor-arg value="30 seconds"/>
         <property name="codeLine" value="21"/>
         <property name="lap" ref="laptop"/>
+        <constructor-arg ref="desktop"/>
     </bean>
     <bean id="laptop" class="org.example.Laptop">
         <property name="compileTime" value="30"/>
     </bean>
+
+    <bean id="desktop" class="org.example.Desktop"/>
 </beans>
