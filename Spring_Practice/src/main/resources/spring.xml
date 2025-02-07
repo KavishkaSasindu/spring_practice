@@ -8,6 +8,6 @@
         <property name="lap" ref="laptop"/>
     </bean>
     <bean id="laptop" class="org.example.Laptop">
-
+        <property name="compileTime" value="30"/>
     </bean>
 </beans>
