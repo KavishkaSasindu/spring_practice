@@ -3,15 +3,4 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="alien" class="org.example.Alien">
-        <constructor-arg value="30 seconds"/>
-        <property name="codeLine" value="21"/>
-        <property name="lap" ref="laptop"/>
-        <constructor-arg ref="desktop"/>
-    </bean>
-    <bean id="laptop" class="org.example.Laptop">
-        <property name="compileTime" value="30"/>
-    </bean>
-
-    <bean id="desktop" class="org.example.Desktop"/>
 </beans>
